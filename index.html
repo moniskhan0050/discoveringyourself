@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey of Discovering Yourself | Owais Ahmad Khan</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+        <div class="container">
+            <div class="announcement-box">
+                <h2>Comming Soon Online Workshop</h2>
+                <div class="schedule-grid">
+                    <div class="day-info">
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">JOURNEY <span class="thin">OF</span> SELF</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#trainer">Trainer</a>
+                <a href="#booking">Book Now</a>
+                <a href="#feedback">Testimonials</a>
+                <button class="btn btn-outline disabled" disabled>Take Assessment</button>
+            </nav>
+            <button class="mobile-menu-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-parallax" style="background-image: url('public/images/hero-bg.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text-box reveal">
+                <h2 class="hero-subtitle">Discover the hidden treasures within yourself</h2>
+                <h1 class="hero-title">Journey <span class="of">of</span> <br>Discovering Yourself</h1>
+                <p class="hero-supporting">Unlock your true potential by understanding your God-given personality</p>
+                <div class="hero-btns">
+                    <a href="#booking" class="btn btn-primary lg">Book Workshop</a>
+                    <button class="btn btn-glass lg disabled" disabled>Take Assessment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="pattern-bg" style="background-image: url('public/images/pattern-bg.png');"></div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <h2 class="section-title">The Workshop</h2>
+                    <p class="intro-text">Journey of Discovering Yourself by <strong>Owais Ahmad Khan</strong> is a transformative self-development workshop designed to help participants recognize their uniqueness, natural strengths, weaknesses, and hidden potential to become the best version of themselves by discovering their God-given personality through understanding their inborn nature.</p>
+                    <p class="intro-text">This workshop helps you reflect, understand, and discover your true nature, allowing you to understand yourself and others better. Through this workshop, you will be able to deeply understand yourself and truly discover who you are.</p>
+                </div>
+                <div class="benefits-card reveal">
+                    <h3>What you will gain:</h3>
+                    <ul>
+                        <li><i data-lucide="check-circle"></i> Deepen your understanding of yourself and others</li>
+                        <li><i data-lucide="check-circle"></i> Improve your communication and social interactions</li>
+                        <li><i data-lucide="check-circle"></i> Identify your natural strengths and weaknesses</li>
+                        <li><i data-lucide="check-circle"></i> Learn how to unlock your inborn potential</li>
+                        <li><i data-lucide="check-circle"></i> Gain control over your moods and emotions</li>
+                        <li><i data-lucide="check-circle"></i> Build more satisfying relationships and a happier life</li>
+                        <li><i data-lucide="check-circle"></i> Discover what truly motivates you and clarify your goals</li>
+                    </ul>
+                    <p class="closing-line italic">"Begin your journey to becoming the best version of yourself."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainer Section -->
+    <section id="trainer" class="trainer">
+        <div class="container">
+            <div class="trainer-card reveal">
+                <div class="trainer-img">
+                    <img src="public/images/ok.2.jpeg" alt="Owais Ahmad Khan, a spiritual mentor and workshop instructor, seated in a calm, warm studio environment. He has a focused expression and is presented in a professional headshot style with soft natural lighting. The background is simple and understated, creating a serene and trustworthy tone. Text in the image is not present.">
+                </div>
+                <div class="trainer-info">
+                    <span class="label">Trainer & Course Instructor</span>
+                    <h2 class="trainer-name">Owais Ahmad Khan</h2>
+                    <p class="trainer-bio">A dedicated mentor passionate about helping individuals find their true self through the science of temperaments and personality discovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking & Payment Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-form-box reveal">
+                    <h2 class="section-title">Register Yourself For Online Workshop</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="registration-form">
+                        <input type="hidden" name="access_key" value="8f12418b-7dae-47bf-b7af-49d0ee55a804">
+                        <input type="hidden" name="subject" value="New Workshop Booking">
+                        <input type="hidden" name="payment_amount" value="499">
+                        <input type="hidden" name="payment_upi" value="owaisahmadytl-1@oksbi">
+                        
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" name="name" required placeholder="Full Name">
+                        </div>
+                        <div class="row">
+                            <div class="input-group">
+                                <label>Gender</label>
+                                <select name="gender" required>
+                                    <option value="">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>Age</label>
+                                <input type="number" name="age" required placeholder="Age">
+                            </div>
+                            <div class="input-group">
+                                <label>Contact Number</label>
+                                <input type="text" name="contact" required placeholder="Contact Number">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Profession</label>
+                            <input type="text" name="profession" required placeholder="e.g. Student, Teacher, etc.">
+                        </div>
+                        <div class="row">
+                            <div class="input-group">
+                                <label>City</label>
+                                <input type="text" name="city" required placeholder="City">
+                            </div>
+                            <div class="input-group">
+                                <label>State</label>
+                                <input type="text" name="state" required placeholder="State">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary full">Book Workshop</button>
+                    </form>
+                    <div class="registration-success" id="registration-success" hidden>
+                        <i data-lucide="circle-check"></i>
+                        <h3>Registration received</h3>
+                        <p>Thank you. Complete your ₹499 payment, then send the receipt on WhatsApp to confirm your seat.</p>
+                        <a class="btn btn-primary full" href="https://wa.me/919511712871?text=Hello%20Owais%20Ahmad%20Khan%2C%20I%20have%20completed%20the%20%E2%82%B9499%20workshop%20payment.%20I%20am%20sending%20my%20receipt%20here." target="_blank" rel="noopener">
+                            <i data-lucide="message-circle"></i> Send Receipt on WhatsApp
+                        </a>
+                        <label class="receipt-upload">
+                            <span>Choose receipt image (optional)</span>
+                            <input type="file" id="receipt-file" accept="image/*,.pdf">
+                        </label>
+                        <p class="receipt-note" id="receipt-note">Attach the selected receipt in WhatsApp before sending.</p>
+                    </div>
+                </div>
+
+                <div class="payment-box reveal">
+                    <div class="payment-card">
+                        <h3>Registration Payment</h3>
+                        <div class="price-tag">Amount: ₹499</div>
+                        <p class="upi">UPI ID: <span class="highlight">owaisahmadytl-1@oksbi</span></p>
+                        <div class="qr-container">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=12&data=upi%3A%2F%2Fpay%3Fpa%3Dowaisahmadytl-1%40oksbi%26pn%3DOwais%2520Ahmad%2520Khan%26am%3D499.00%26cu%3DINR" alt="Scan this QR code to pay ₹499 to Owais Ahmad Khan" width="320" height="320">
+                            <p class="scan-label">Scan to pay with any UPI app</p>
+                        </div>
+                        <div class="whatsapp-alert highlight-wa">
+                            <i data-lucide="message-circle"></i>
+                            <p>After payment, send your receipt on WhatsApp: <a href="https://wa.me/919511712871" target="_blank" rel="noopener"><strong>9511712871</strong></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="feedback">
+        <div class="container">
+            <h2 class="section-title centered reveal">Student Feedback</h2>
+            <div class="feedback-grid">
+                <!-- Testimonial 1 -->
+                <div class="feedback-card reveal">
+                    <p class="feedback-text">"Al Hamdulillah! Journey of Self Discovery workshop by Owais Ahmad Khan was truly amazing. The uniqueness was it not only helped us know our strengths but opened a pathway for self reflection and positive change."</p>
+                    <div class="feedback-user">
+                        <div class="user-info">
+                            <h4>Dr Syed Shaheen</h4>
+                            <span>Beed, Maharashtra</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 (Urdu) -->
+                <div class="feedback-card reveal urdu">
+                    <p class="feedback-text">جزاک اللہ خیرا کثیرا آج پہلی بار اپنے آپ کو جان کر اپنی ذات کے لئے کچھ کرنے کا موقع ملا ہے۔ واقعی آج خود سے خودی تک پہنچے ہیں۔</p>
+                    <div class="feedback-user">
+                        <div class="user-info">
+                            <h4>Workshop Student</h4>
+                            <span>May Allah bless you. Aameen.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="feedback-card reveal">
+                    <p class="feedback-text">"The self discovery workshop was detailed and well prepared. New insights and much more was explained in the workshop by Owais Sir."</p>
+                    <div class="feedback-user">
+                        <div class="user-info">
+                            <h4>Course Participant</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="feedback-card reveal">
+                    <p class="feedback-text">"Alhumdulillah. Aaj hum ne apni shaksiyat ko pehchana aur humko apni khoobiyon aur kamiyon ko pehchanne me madad mili. Allah Taala aapko jazay khair ataa kare."</p>
+                    <div class="feedback-user">
+                        <div class="user-info">
+                            <h4>Student Feedback</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2 class="section-title centered reveal">Workshop Highlights</h2>
+            <div class="video-grid reveal">
+                <div class="video-item">
+                    <div class="video-placeholder"><i data-lucide="play-circle"></i></div>
+                    <p>Understanding Temperaments</p>
+                </div>
+                <div class="video-item">
+                    <div class="video-placeholder"><i data-lucide="play-circle"></i></div>
+                    <p>Workshop Reflections</p>
+                </div>
+                <div class="video-item">
+                    <div class="video-placeholder"><i data-lucide="play-circle"></i></div>
+                    <p>Live Q&A Sessions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>JOURNEY OF SELF</h3>
+                    <p>Begin your journey to becoming the best version of yourself.</p>
+                    <a class="footer-instagram-handle" href="https://www.instagram.com/owaisahmadkhanofficial?igsi=MTlyY29ydm95NjJ0cQ==" target="_blank" rel="noopener">@owaisahmadkhanofficial</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a class="social-icon instagram-icon" href="https://www.instagram.com/owaisahmadkhanofficial?igsi=MTlyY29ydm95NjJ0cQ==" target="_blank" rel="noopener" aria-label="Visit Owais Ahmad Khan on Instagram" title="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+                    <a class="social-icon whatsapp-icon" href="https://wa.me/919511712871?text=Hello%20Owais%20Ahmad%20Khan%2C%20I%20would%20like%20to%20know%20more%20about%20the%20workshop." target="_blank" rel="noopener" aria-label="Message Owais Ahmad Khan on WhatsApp" title="WhatsApp">
+                        <i data-lucide="message-circle"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Monis Khan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

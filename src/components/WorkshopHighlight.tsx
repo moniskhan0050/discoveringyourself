@@ -1,0 +1,50 @@
+import { motion } from 'framer-motion';
+import { Calendar, Clock, Sparkles } from 'lucide-react';
+
+const WorkshopHighlight = () => {
+  return (
+    <div className="container mx-auto px-6 -mt-20 relative z-20">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        className="glass-card p-8 md:p-12 border-brand-lavender/30 border-2 relative overflow-hidden group hover:border-brand-lavender/50 transition-all duration-500"
+      >
+        {/* Glow effect */}
+        <div className="absolute -top-20 -left-20 w-64 h-64 bg-brand-lavender/10 rounded-full blur-[80px] group-hover:bg-brand-lavender/20 transition-all" />
+
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12 relative z-10">
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-2 bg-brand-lavender/10 text-brand-lavender py-1 px-4 rounded-full w-fit border border-brand-lavender/20">
+              <Sparkles size={14} />
+              <span className="text-[10px] uppercase font-bold tracking-widest">Limited Seats Available</span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold">Upcoming Online Workshop</h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full md:w-auto">
+            <div className="flex items-center gap-6 p-6 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+              <Calendar className="text-brand-lavender" size={32} />
+              <div>
+                <p className="text-brand-lavender text-xs uppercase font-bold tracking-tighter">Day 1 - 23 May</p>
+                <p className="text-lg font-medium">Sat: 8:30 PM - 11:30 PM</p>
+                <p className="text-xs opacity-50 italic">Night Session</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-6 p-6 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+              <Clock className="text-brand-lavender" size={32} />
+              <div>
+                <p className="text-brand-lavender text-xs uppercase font-bold tracking-tighter">Day 2 - 24 May</p>
+                <p className="text-lg font-medium">Sun: 10:00 AM - 1:00 PM</p>
+                <p className="text-xs opacity-50 italic">Morning Session</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+export default WorkshopHighlight;

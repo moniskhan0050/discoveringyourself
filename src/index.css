@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0F011E;
+  --color-brand-purple: #2D1B4E;
+  --color-brand-lavender: #A78BFA;
+  --color-brand-glow: #D8B4FE;
+  --color-brand-accent: #E6E0F0;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: Inter, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-dark text-white font-sans;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  .glass-card {
+    @apply glass rounded-2xl shadow-2xl;
+  }
+  .btn-primary {
+    @apply px-8 py-3 bg-brand-lavender text-brand-dark rounded-full font-bold transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(167,139,250,0.5)] active:scale-95;
+  }
+  .btn-secondary {
+    @apply px-8 py-3 border-2 border-brand-lavender text-brand-lavender rounded-full font-bold transition-all hover:bg-brand-lavender/10 active:scale-95;
+  }
+  .section-padding {
+    @apply py-24 px-6 md:px-12 lg:px-24;
+  }
+}
+
+.heading-glow {
+  text-shadow: 0 0 15px rgba(167,139,250,0.3);
+}
+
+.urdu-text {
+  direction: rtl;
+  @apply font-sans;
+}
