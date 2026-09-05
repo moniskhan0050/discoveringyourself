@@ -336,6 +336,7 @@ section {
     gap: 15px;
     margin-bottom: 15px;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .benefits-card li i {
@@ -591,4 +592,5 @@ section {
     .mobile-menu-toggle { display: block; background: transparent; border: none; color: var(--primary); font-size: 1.5rem; }
     .schedule-grid { grid-template-columns: 1fr; }
     .feedback-grid, .video-grid { grid-template-columns: 1fr; }
+    .benefits-card { padding: 30px 24px; }
 }
